@@ -1,0 +1,17 @@
+.special-offers {
+    margin: 20px 0;
+
+    &__img {
+        border-radius: 50%;
+        width: 60px !important;
+        height: 60px !important;
+        object-fit: cover;
+        border: 1.5px solid #5c5c5c;
+    }
+
+    &__text {
+        color: #000;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}

@@ -3,6 +3,19 @@ body {
     font-family: Gilroy;
 }
 
+.container {
+    max-width: 1268px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.title {
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
 @font-face {
     font-family: Gilroy;
     src: url(./assets/fonts/Gilroy/Gilroy-Regular.woff);

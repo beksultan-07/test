@@ -1,0 +1,38 @@
+.header {
+    padding: 15px 0;
+    background: #0063a9;
+
+    &__btn {
+        background: rgba(0, 0, 0, 0.1);
+        height: 47px;
+    }
+
+    &__input {
+        border-radius: 1000px;
+        padding: 12px 22px 12px 13px;
+        box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+        max-width: 675px;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 10px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__register {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+    }
+    &__btn__link {
+        height: 100%;
+    }
+    &__divider {
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        width: 1px;
+    }
+}

@@ -1,14 +1,25 @@
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
-
-import { Button, Flex } from "antd";
+import Header from "./components/header/index";
+import Footer from "./components/footer";
+import SpecialOffers from "./components/special_offers";
+import Category from "./components/category";
+import Products from "./components/products";
+import News from "./components/news";
+import Address from "./components/address";
 
 function App() {
     return (
-        <Flex>
-            <Button>click</Button>
-            <Button>click</Button>
-        </Flex>
+        <>
+            <Header />
+            <main>
+                <SpecialOffers />
+                <Category />
+                <Products />
+                <News />
+                <Products />
+                <Address />
+            </main>
+            <Footer />
+        </>
     );
 }
 
