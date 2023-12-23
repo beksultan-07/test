@@ -71,9 +71,9 @@ const SpecialOffers: React.FC = () => {
         <section className="special-offers">
             <div className="container">
                 <Flex justify="space-between">
-                    {images.map((el) => {
+                    {images.map((el, idx) => {
                         return (
-                            <Flex vertical align="center">
+                            <Flex vertical align="center" key={idx}>
                                 <Image
                                     src={el.img}
                                     className="special-offers__img"

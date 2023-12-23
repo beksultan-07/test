@@ -16,6 +16,13 @@ body {
     font-weight: 600;
 }
 
+.ant-card .ant-card-head {
+    border: none;
+}
+
+main {
+    background: #f8faff;
+}
 @font-face {
     font-family: Gilroy;
     src: url(./assets/fonts/Gilroy/Gilroy-Regular.woff);
