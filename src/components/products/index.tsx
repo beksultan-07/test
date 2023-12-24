@@ -12,15 +12,19 @@ import "swiper/css/pagination";
 
 import "./style.scss";
 
-const Products: React.FC = () => {
+interface Props {
+    title: string;
+}
+
+const Products: React.FC<Props> = ({ title }) => {
     const [products, setProducts] = useState<Array<productType>>([
         {
             id: 1,
             price: 1290,
             liked: true,
-            sales: null,
+            sales: 999,
             text: "Держатель для лейки BOOU PG605 ",
-            count: 1,
+            count: 0,
             img: img,
             status: "В наличии",
             instock: "Комплект",
@@ -31,7 +35,7 @@ const Products: React.FC = () => {
             liked: false,
             sales: null,
             text: "Держатель для лейки BOOU PG605 ",
-            count: 1,
+            count: 0,
             img: img,
             status: "В наличии",
             instock: "Комплект",
@@ -42,7 +46,7 @@ const Products: React.FC = () => {
             liked: false,
             sales: null,
             text: "Держатель для лейки BOOU PG605 ",
-            count: 1,
+            count: 0,
             img: img,
             status: "В наличии",
             instock: "Комплект",
@@ -53,7 +57,7 @@ const Products: React.FC = () => {
             liked: false,
             sales: null,
             text: "Держатель для лейки BOOU PG605 ",
-            count: 1,
+            count: 0,
             img: img,
             status: "В наличии",
             instock: "Комплект",
@@ -64,7 +68,7 @@ const Products: React.FC = () => {
             liked: false,
             sales: null,
             text: "Держатель для лейки BOOU PG605 ",
-            count: 1,
+            count: 0,
             img: img,
             status: "В наличии",
             instock: "Комплект",
@@ -75,7 +79,7 @@ const Products: React.FC = () => {
             liked: false,
             sales: null,
             text: "Держатель для лейки BOOU PG605 ",
-            count: 1,
+            count: 0,
             img: img,
             status: "В наличии",
             instock: "Комплект",
@@ -86,7 +90,7 @@ const Products: React.FC = () => {
             liked: false,
             sales: null,
             text: "Держатель для лейки BOOU PG605 ",
-            count: 1,
+            count: 0,
             img: img,
             status: "В наличии",
             instock: "Комплект",
@@ -97,7 +101,7 @@ const Products: React.FC = () => {
             liked: false,
             sales: null,
             text: "Держатель для лейки BOOU PG605 ",
-            count: 1,
+            count: 0,
             img: img,
             status: "В наличии",
             instock: "Комплект",
@@ -135,13 +139,16 @@ const Products: React.FC = () => {
     return (
         <section className="products">
             <div className="container">
-                <h2 className="title">Хиты продаж</h2>
+                <h2 className="title">{title}</h2>
                 <Swiper
                     modules={[Navigation, Pagination]}
                     pagination={{ clickable: true, dynamicBullets: true }}
                     spaceBetween={10}
                     slidesPerView={6}
-                    navigation
+                    navigation={{
+                        prevEl: ".swiper-button-prev",
+                        nextEl: ".swiper-button-next",
+                    }}
                     loop
                 >
                     {products.map((el) => (
@@ -154,6 +161,8 @@ const Products: React.FC = () => {
                             />
                         </SwiperSlide>
                     ))}
+                    <div className="swiper-button-prev"></div>
+                    <div className="swiper-button-next"></div>
                 </Swiper>
             </div>
         </section>

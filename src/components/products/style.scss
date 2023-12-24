@@ -20,26 +20,49 @@
                 background: rgba(255, 255, 255, 0.5);
             }
         }
+        &__text {
+            color: #1a1919;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.28px;
+        }
+        &__price {
+            color: #000;
+            font-size: 19px;
+            font-weight: 700;
+
+            &.red {
+                color: #ff0000;
+            }
+        }
+        &__sales {
+            color: #808080;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: line-through;
+        }
+        &__status {
+            color: #73cb5e;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        &__instock {
+            color: #3286c2;
+            font-size: 12px;
+            font-weight: 400;
+            position: relative;
+            left: 10px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: calc(50% - 2.5px);
+                left: -10px;
+                width: 5px;
+                height: 5px;
+                background: #3286c2;
+                border-radius: 50%;
+            }
+        }
     }
-}
-.swiper-button-prev,
-.swiper-button-next {
-    color: #171717 !important;
-}
-.swiper-button-prev::after,
-.swiper-button-next::after,
-.swiper-button-prev::before,
-.swiper-button-next::before {
-    font-size: 32px;
-}
-
-.swiper-pagination-bullet-active {
-    width: 33px;
-    border-radius: 26px;
-    transition: 0.3s;
-}
-
-.swiper-pagination-bullet {
-    background: #0063a9;
-    opacity: 1;
 }

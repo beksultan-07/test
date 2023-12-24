@@ -1,3 +1,27 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./assets/fonts/Gilroy/Gilroy-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./assets/fonts/Gilroy/Gilroy-Medium.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./assets/fonts/Gilroy/Gilroy-SemiBold.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./assets/fonts/Gilroy/Gilroy-Bold.woff);
+    font-weight: 700;
+}
+
 body {
     margin: 0;
     font-family: Gilroy;
@@ -24,26 +48,53 @@ body {
 main {
     background: #f8faff;
 }
-@font-face {
-    font-family: Gilroy;
-    src: url(./assets/fonts/Gilroy/Gilroy-Regular.woff);
-    font-weight: 400;
+
+.buttons {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@font-face {
-    font-family: Gilroy;
-    src: url(./assets/fonts/Gilroy/Gilroy-Medium.woff);
-    font-weight: 500;
+.outer-container {
+    position: relative;
 }
 
-@font-face {
-    font-family: Gilroy;
-    src: url(./assets/fonts/Gilroy/Gilroy-SemiBold.woff);
-    font-weight: 600;
+.swiper {
+    /* overflow: visible; */
+}
+.swiper-wrapper {
+    /* overflow: hidden;
+    left: calc(198px * 2 + 20px); */
 }
 
-@font-face {
-    font-family: Gilroy;
-    src: url(./assets/fonts/Gilroy/Gilroy-Bold.woff);
-    font-weight: 700;
+.swiper-button-prev,
+.swiper-button-next {
+    color: #171717 !important;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after,
+.swiper-button-prev::before,
+.swiper-button-next::before {
+    font-size: 32px;
+}
+
+.swiper-pagination-bullet-active {
+    width: 33px;
+    border-radius: 26px;
+    transition: 0.3s;
+}
+
+.swiper-pagination-bullet {
+    background: #0063a9;
+    opacity: 1;
+}
+
+.swiper-button-prev {
+    left: 0px;
+}
+
+.swiper-button-next {
+    right: 0px;
 }

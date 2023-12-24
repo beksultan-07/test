@@ -25,7 +25,8 @@ const Address: React.FC = () => {
             logo,
             name: "Iskender home",
             url: "https://maps.app.goo.gl/jFCpTNQjCxKRsYqz6",
-            address: "Кыргызстан, г. Бишкек ул. Турусбекова A167",
+            address: "Кыргызстан, г. Бишкек ",
+            address2: "ул. Турусбекова A167",
             workTime: "08:00 - 22:00",
             phoneNumber: "+996 500 345 345",
         },
@@ -34,7 +35,8 @@ const Address: React.FC = () => {
             logo,
             name: "Iskender home",
             url: "https://maps.app.goo.gl/jFCpTNQjCxKRsYqz6",
-            address: "Кыргызстан, г. Бишкек ул. Турусбекова A167",
+            address: "Кыргызстан, г. Бишкек ",
+            address2: "ул. Турусбекова A167",
             workTime: "08:00 - 22:00",
             phoneNumber: "+996 500 345 345",
         },
@@ -43,7 +45,8 @@ const Address: React.FC = () => {
             logo,
             name: "Iskender home",
             url: "https://maps.app.goo.gl/jFCpTNQjCxKRsYqz6",
-            address: "Кыргызстан, г. Бишкек ул. Турусбекова A167",
+            address: "Кыргызстан, г. Бишкек ",
+            address2: "ул. Турусбекова A167",
             workTime: "08:00 - 22:00",
             phoneNumber: "+996 500 345 345",
         },
@@ -52,7 +55,8 @@ const Address: React.FC = () => {
             logo,
             name: "Iskender home",
             url: "https://maps.app.goo.gl/jFCpTNQjCxKRsYqz6",
-            address: "Кыргызстан, г. Бишкек ул. Турусбекова A167",
+            address: "Кыргызстан, г. Бишкек ",
+            address2: "ул. Турусбекова A167",
             workTime: "08:00 - 22:00",
             phoneNumber: "+996 500 345 345",
         },
@@ -72,7 +76,14 @@ const Address: React.FC = () => {
                 >
                     {addresses.map((address) => (
                         <SwiperSlide>
-                            <div className="address__item">
+                            <div
+                                className="address__item"
+                                style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    gap: "20px",
+                                }}
+                            >
                                 <a
                                     className="address__item__top"
                                     href={address.url}
@@ -102,10 +113,11 @@ const Address: React.FC = () => {
 
                                 <Divider />
 
-                                <Flex gap={5}>
+                                <Flex gap={5} align="flex-start">
                                     <EnvironmentOutlined />
                                     <p className="address__item__text">
-                                        {address.address}
+                                        {address.address} <br />
+                                        {address.address2}
                                     </p>
                                 </Flex>
                                 <Flex justify="space-between" align="center">

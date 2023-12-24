@@ -1,9 +1,9 @@
 import Header from "./components/header/index";
-import Footer from "./components/footer";
 import SpecialOffers from "./components/special_offers";
 import Category from "./components/category";
 import Products from "./components/products";
 import News from "./components/news";
+import Footer from "./components/footer";
 import Address from "./components/address";
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
             <main>
                 <SpecialOffers />
                 <Category />
-                <Products />
+                <Products title="Хиты продаж" />
                 <News />
-                <Products />
+                <Products title="Аукционные товары" />
                 <Address />
             </main>
             <Footer />

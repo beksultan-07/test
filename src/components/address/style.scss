@@ -1,7 +1,25 @@
 .address {
+    margin: 66px 0;
     &__item {
         border-radius: 10px;
         background: #fff;
         padding: 15px;
+
+        &__top {
+            text-decoration: none;
+        }
+
+        &__title {
+            color: #000;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &__link {
+            color: #0062d5;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration-line: underline;
+        }
     }
 }
